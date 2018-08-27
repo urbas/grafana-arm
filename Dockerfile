@@ -1,8 +1,10 @@
-FROM ubuntu:xenial
+FROM ubuntu:18.04
 
-RUN echo "deb http://dl.bintray.com/matej/deb-packages xenial main" | tee -a /etc/apt/sources.list
-
-RUN apt-get update --allow-unauthenticated && apt-get install -y --allow-unauthenticated grafana=4.5.2
+RUN apt-get update
+RUN apt-get install -y --no-install-recommends curl ca-certificates
+RUN curl -o grafana.deb https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.2.2_armhf.deb
+RUN apt-get install -y ./grafana.deb
+RUN rm grafana.deb
 
 EXPOSE 3000
 
