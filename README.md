@@ -1,4 +1,4 @@
-# Grafana ARM [![dockerhub image badge]](://hub.docker.com/r/urbas/grafana/)
+# Grafana ARM [![dockerhub image badge]](https://hub.docker.com/r/urbas/grafana/)
 Image containing Grafana compiled for ARM.
 
 Get it from Docker hub: https://hub.docker.com/r/urbas/grafana/tags/
