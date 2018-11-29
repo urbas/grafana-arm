@@ -9,4 +9,4 @@ sudo docker run -p 80:3000 urbas/grafana
 ```
 
 
-[dockerhub image badge]: https://img.shields.io/badge/dockerhub-urbas%2Fgrafana:5.3.4-brightgreen.svg
+[dockerhub image badge]: https://img.shields.io/badge/dockerhub-urbas%2Fgrafana:5.3.3-brightgreen.svg
