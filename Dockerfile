@@ -4,6 +4,7 @@ RUN apt-get update
 RUN apt-get install -y --no-install-recommends curl ca-certificates
 RUN curl -sfo grafana.deb https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.4.0_armhf.deb
 RUN apt-get install -y ./grafana.deb
+RUN apt-get clean
 RUN rm grafana.deb
 
 EXPOSE 3000
