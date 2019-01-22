@@ -7,13 +7,13 @@ pipeline {
         stage('Build') {
             steps {
                 sh "sudo docker build -t urbas/grafana:${releaseVersion} ."
-                sh "sudo docker tag urbas/grafana:${releaseVersion} latest"
+                sh "sudo docker tag urbas/grafana:${releaseVersion} urbas/grafana:latest"
             }
         }
         stage('Deploy') {
             steps {
                 sh "sudo docker push urbas/grafana:${releaseVersion}"
-                sh "sudo docker push latest"
+                sh "sudo docker push urbas/grafana:latest"
             }
         }
     }
