@@ -5,7 +5,7 @@ FROM ubuntu:18.04
 ENV GRAFANA_VERSION $GRAFANA_VERSION
 RUN apt-get update
 RUN apt-get install -y --no-install-recommends curl ca-certificates
-RUN curl -sfo grafana.deb https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_${GRAFANA_VERSION}_armhf.deb
+RUN bash -c "curl -sfo grafana.deb https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_${GRAFANA_VERSION}_armhf.deb"
 RUN apt-get install -y ./grafana.deb
 RUN apt-get clean
 RUN rm grafana.deb
