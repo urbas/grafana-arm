@@ -1,4 +1,4 @@
-releaseVersion = "6.1.0"
+releaseVersion = "6.1.1"
 
 pipeline {
     agent any
