@@ -1,4 +1,4 @@
-FROM buildpack-deps:bionic-curl
+FROM buildpack-deps:18.04-curl
 
 RUN apt-get update
 
