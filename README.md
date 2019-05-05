@@ -1,4 +1,4 @@
-# Grafana ARM [![dockerhub image badge]](https://hub.docker.com/r/urbas/grafana/)
+# Grafana ARM [![dockerhub image badge]](https://hub.docker.com/r/urbas/grafana/) [![Build Status](https://jenkins.urbas.si/buildStatus/icon?job=grafana-arm)](https://jenkins.urbas.si/job/grafana-arm/)
 Image containing Grafana compiled for ARM.
 
 Specifically for the armhf architecture (built on Raspbian).
